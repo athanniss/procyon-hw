@@ -646,16 +646,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 137.16) (xy 195.58 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8d15270-2063-470e-bef3-72f93b5967d1")
-	)
-	(wire
-		(pts
 			(xy 166.37 101.6) (xy 173.99 101.6)
 		)
 		(stroke
@@ -673,16 +663,6 @@
 			(type default)
 		)
 		(uuid "ee3730a0-7430-446a-8ff7-e37a1d68ebc5")
-	)
-	(wire
-		(pts
-			(xy 130.81 134.62) (xy 195.58 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef3af4f0-ce73-4bb3-ac7a-aa5768100b06")
 	)
 	(wire
 		(pts
@@ -763,6 +743,17 @@
 			(type default)
 		)
 		(uuid "fd5b2318-fa43-4285-9dd8-5e3fdaf37f98")
+	)
+	(text "1. Added ILI9341 2.2 inch TFT\n2. Removed OLED screen\n3. Fixed I2C pullups\n4. Removed wetting current circuit\n5. Added 1k resistor to transistor gate\n6. Decided not to implement debounce to rotary encoders, will use state machine based lib\n7. Upped gain on current measurement by 3x (from ~32 to 100)\n8. Added a DNP pulldown on transistor gate just in case"
+		(exclude_from_sim no)
+		(at 27.178 177.292 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a5f45a4-bf20-40a3-b78a-ff8d62d1d6ba")
 	)
 	(text "1. I2C pullup upora sta vezana na maso\n2. Encoder mode deluje samo če je povezan na TIMx_CH1 in TIMx_CH2\n3. Manjka 1k upor med bufferjem in gatom tranzistorja\n4. Napačen footprint na napetostni referenci\n5. Kam si vezal tisti wetting current enable, lol"
 		(exclude_from_sim no)
@@ -1152,46 +1143,6 @@
 			)
 			(uuid "0207af77-b962-4db0-b90f-c24ce90884e4")
 		)
-		(pin "I2C_SCK" bidirectional
-			(at 130.81 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0510b1c0-7673-4d74-8b34-01e83213f301")
-		)
-		(pin "I2C_SDA" bidirectional
-			(at 130.81 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c1b21ff9-f635-46ae-b17f-3a34e1dc5fdf")
-		)
-		(pin "E_HIGH_I_RANGE" output
-			(at 130.81 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "84e421b2-2b63-4a2d-a5e2-2ace00e83d45")
-		)
-		(pin "EN_WETTING_CURRENT" output
-			(at 130.81 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "1e72401b-4e5d-4e71-9ce8-ef6363ccb966")
-		)
 		(pin "IO_PWM_CONTROL" output
 			(at 130.81 132.08 0)
 			(effects
@@ -1348,16 +1299,6 @@
 			)
 			(uuid "cd074f8b-8582-400e-814c-5ad1f85f2dab")
 		)
-		(pin "E_HIGH_I_RANGE" input
-			(at 195.58 137.16 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1b0f064c-ba66-441c-a53a-c0d1ed7d2ee2")
-		)
 		(pin "IO_PWM_CONTROL" input
 			(at 195.58 132.08 180)
 			(effects
@@ -1367,16 +1308,6 @@
 				(justify left)
 			)
 			(uuid "27372fa6-422e-4641-bf81-784e10d6ea16")
-		)
-		(pin "EN_WETTING_CURRENT" input
-			(at 195.58 134.62 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6733c6ef-d0d9-40ad-a9ea-c2766a6789f5")
 		)
 		(pin "LS1_OUT" input
 			(at 229.87 114.3 0)
