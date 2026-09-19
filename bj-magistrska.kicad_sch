@@ -289,6 +289,332 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GNDPWR"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GNDPWR"
+				(at 0 -3.302 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GNDPWR_0_1"
+				(polyline
+					(pts
+						(xy -1.016 -1.27) (xy -1.27 -2.032) (xy -1.27 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.27) (xy -0.762 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy -0.254 -2.032) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.27) (xy 0.254 -2.032) (xy 0.254 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy -1.016 -1.27) (xy -1.016 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.27) (xy 0.762 -2.032) (xy 0.762 -2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDPWR_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "1. Added ILI9341 2.2 inch TFT\n2. Removed OLED screen\n3. Fixed I2C pullups\n4. Removed wetting current circuit\n5. Added 1k resistor to transistor gate\n6. Decided not to implement debounce to rotary encoders, will use state machine based lib\n7. Upped gain on current measurement by 3x (from ~32 to 100)\n8. Added a DNP pulldown on transistor gate just in case"
 		(exclude_from_sim no)
@@ -314,27 +640,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 83.82) (xy 90.17 83.82)
+			(xy 160.02 60.96) (xy 160.02 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24fc3796-3f5f-40c0-b1a2-b6baaaaea546")
+		(uuid "459e6457-64ed-41e0-bf82-1f0a0e7a0bba")
 	)
 	(wire
 		(pts
-			(xy 130.81 101.6) (xy 139.7 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4189575d-c1cc-4dce-8992-d9511431867a")
-	)
-	(wire
-		(pts
-			(xy 130.81 121.92) (xy 195.58 121.92)
+			(xy 130.81 121.92) (xy 154.94 121.92)
 		)
 		(stroke
 			(width 0)
@@ -344,57 +660,47 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 104.14) (xy 139.7 104.14)
+			(xy 162.56 60.96) (xy 160.02 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d19abc6-831f-41db-94e2-0863f3215ca1")
+		(uuid "5b26c138-cb2f-48ea-aeff-380194df9546")
 	)
 	(wire
 		(pts
-			(xy 229.87 114.3) (xy 236.22 114.3)
+			(xy 160.02 58.42) (xy 160.02 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89a0263d-51fa-47c9-9233-01dcabc5d3d7")
+		(uuid "713ae9ad-15c0-4928-890e-0e46e474b0cb")
 	)
 	(wire
 		(pts
-			(xy 130.81 113.03) (xy 139.7 113.03)
+			(xy 189.23 116.84) (xy 195.58 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a8e9b30-7cd3-4d86-a269-774316c80b4d")
+		(uuid "729733e7-2244-43eb-a806-86777ca49626")
 	)
 	(wire
 		(pts
-			(xy 130.81 110.49) (xy 139.7 110.49)
+			(xy 189.23 114.3) (xy 195.58 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b70622d-9a5a-481c-8417-5be6b1a61541")
+		(uuid "a5fbd621-f653-4875-a391-5848d3d9d435")
 	)
 	(wire
 		(pts
-			(xy 186.69 116.84) (xy 195.58 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b872318-7fde-41ce-9266-8d696e9652f1")
-	)
-	(wire
-		(pts
-			(xy 130.81 124.46) (xy 195.58 124.46)
+			(xy 130.81 124.46) (xy 154.94 124.46)
 		)
 		(stroke
 			(width 0)
@@ -404,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 132.08) (xy 195.58 132.08)
+			(xy 130.81 132.08) (xy 154.94 132.08)
 		)
 		(stroke
 			(width 0)
@@ -414,37 +720,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 99.06) (xy 139.7 99.06)
+			(xy 162.56 58.42) (xy 160.02 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be68463f-318b-4765-a616-0a19273c8d7a")
+		(uuid "c73add30-d86b-4664-9595-bce694ab9277")
 	)
 	(wire
 		(pts
-			(xy 229.87 116.84) (xy 236.22 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7370f64-81dd-4410-91c4-d060d9f4c0b7")
-	)
-	(wire
-		(pts
-			(xy 186.69 114.3) (xy 195.58 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f21c66a1-9664-4ff6-bbf8-19c1aa64eee2")
-	)
-	(wire
-		(pts
-			(xy 130.81 127) (xy 195.58 127)
+			(xy 130.81 127) (xy 154.94 127)
 		)
 		(stroke
 			(width 0)
@@ -453,8 +739,9 @@
 		(uuid "f740b58d-6bf4-4ef3-8286-36c4a956e2ef")
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 181.61 116.84 180)
+		(lib_id "power:+12V")
+		(at 160.02 57.15 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -462,9 +749,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5047c4a3-03b9-464c-8314-0bf6d7de2f06")
-		(property "Reference" "J1"
-			(at 174.752 109.22 0)
+		(fields_autoplaced yes)
+		(uuid "163e386d-48f2-4b1b-b9f6-8cd2077f566b")
+		(property "Reference" "#PWR041"
+			(at 160.02 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -473,8 +762,8 @@
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 184.404 111.252 0)
+		(property "Value" "+12V"
+			(at 160.02 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -483,8 +772,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
-			(at 181.61 116.84 0)
+		(property "Footprint" ""
+			(at 160.02 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -495,7 +784,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 116.84 0)
+			(at 160.02 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 160.02 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6c286c16-01f5-4fbf-9963-cbb984340437")
+		)
+		(instances
+			(project "bj-magistrska"
+				(path "/6822ed0d-de6e-44f8-850c-f571d41ba3a1"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 167.64 60.96 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5047c4a3-03b9-464c-8314-0bf6d7de2f06")
+		(property "Reference" "J1"
+			(at 171.196 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 180.848 61.214 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 167.64 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -506,7 +872,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 181.61 116.84 0)
+			(at 167.64 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -517,7 +883,7 @@
 			)
 		)
 		(property "Mfg. Part Number" "1985904"
-			(at 181.61 116.84 0)
+			(at 167.64 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -544,7 +910,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 241.3 114.3 0)
+		(at 200.66 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -555,7 +921,7 @@
 		(fields_autoplaced yes)
 		(uuid "6df18e44-cef8-4e97-9387-6356290684b4")
 		(property "Reference" "J3"
-			(at 243.84 114.2999 0)
+			(at 203.2 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -566,7 +932,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 243.84 116.8399 0)
+			(at 203.2 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -577,7 +943,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
-			(at 241.3 114.3 0)
+			(at 200.66 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -588,7 +954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 114.3 0)
+			(at 200.66 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -599,7 +965,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 241.3 114.3 0)
+			(at 200.66 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -610,7 +976,7 @@
 			)
 		)
 		(property "Mfg. Part Number" "1985904"
-			(at 241.3 114.3 0)
+			(at 200.66 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -733,9 +1099,88 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:GNDPWR")
+		(at 160.02 62.23 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d46260ba-afbe-40aa-8f6a-04ec04fcf4a4")
+		(property "Reference" "#PWR071"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDPWR"
+			(at 160.147 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
+			(at 160.02 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3c3760b-ac0e-473f-bb98-3f24ef1244e6")
+		)
+		(instances
+			(project "bj-magistrska"
+				(path "/6822ed0d-de6e-44f8-850c-f571d41ba3a1"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 90.17 78.74)
-		(size 40.64 60.96)
+		(at 90.17 95.25)
+		(size 40.64 44.45)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -750,7 +1195,7 @@
 		)
 		(uuid "03304114-aca3-49d8-9019-79a8f0173834")
 		(property "Sheetname" "Nucleo-144"
-			(at 90.17 78.0284 0)
+			(at 90.17 94.5384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -769,16 +1214,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "LED_ORNG" output
-			(at 130.81 99.06 0)
-			(uuid "35469616-c6ec-487a-8488-b0d7f0161207")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "SW2" input
@@ -811,16 +1246,6 @@
 				(justify left)
 			)
 		)
-		(pin "3V0_REF" input
-			(at 90.17 83.82 180)
-			(uuid "85330edc-2305-4e45-8191-12d1bf3362e0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ENC_A" input
 			(at 90.17 109.22 180)
 			(uuid "7a6baffe-1705-4326-a2a9-7712f550ffc6")
@@ -839,46 +1264,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "LED_GRN" output
-			(at 130.81 101.6 0)
-			(uuid "4b87ca88-2a55-464b-83dd-a0679672f27e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED_WHT" output
-			(at 130.81 104.14 0)
-			(uuid "79a0cbfc-73f7-46ca-b4cc-09e1b5d85aa2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NUCLEO_3V3" output
-			(at 130.81 86.36 0)
-			(uuid "c73904a6-b4d8-46d0-8106-c0ff9661ef67")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NUCLEO_5V" output
-			(at 130.81 83.82 0)
-			(uuid "0207af77-b962-4db0-b90f-c24ce90884e4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "IO_PWM_CONTROL" output
@@ -930,7 +1315,7 @@
 		)
 	)
 	(sheet
-		(at 195.58 110.49)
+		(at 154.94 110.49)
 		(size 34.29 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -946,7 +1331,7 @@
 		)
 		(uuid "db2bed50-6fec-42f4-bd2a-90f8a985e97f")
 		(property "Sheetname" "Output_Analog"
-			(at 195.58 109.7784 0)
+			(at 154.94 109.7784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -957,7 +1342,7 @@
 			)
 		)
 		(property "Sheetfile" "output_analog.kicad_sch"
-			(at 195.58 141.5546 0)
+			(at 154.94 141.5546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -967,18 +1352,8 @@
 				(justify left top)
 			)
 		)
-		(pin "I_MEAS" output
-			(at 195.58 121.92 180)
-			(uuid "cd074f8b-8582-400e-814c-5ad1f85f2dab")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "IO_PWM_CONTROL" input
-			(at 195.58 132.08 180)
+			(at 154.94 132.08 180)
 			(uuid "27372fa6-422e-4641-bf81-784e10d6ea16")
 			(effects
 				(font
@@ -987,9 +1362,9 @@
 				(justify left)
 			)
 		)
-		(pin "LS1_OUT" input
-			(at 229.87 114.3 0)
-			(uuid "65dfc598-70fa-47cd-8dac-0fdd879894d7")
+		(pin "COIL_IN" input
+			(at 189.23 116.84 0)
+			(uuid "e2edf2cb-7fca-45c9-a03b-c9b82f9224af")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,29 +1372,9 @@
 				(justify right)
 			)
 		)
-		(pin "PWR_GND" input
-			(at 195.58 116.84 180)
-			(uuid "2290b266-df4a-4831-95f3-6a590d8be465")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PWR_24V" input
-			(at 195.58 114.3 180)
-			(uuid "391b97fb-35b7-49c4-9759-72f63ac88c18")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LS1_RETURN" output
-			(at 229.87 116.84 0)
-			(uuid "780748a8-34ca-4795-8c3f-65dfa3cf1e55")
+		(pin "COIL_OUT" output
+			(at 189.23 114.3 0)
+			(uuid "da99c1c1-43f4-47e9-91bd-e293381a27b0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1027,24 +1382,44 @@
 				(justify right)
 			)
 		)
-		(pin "V24_MEAS" output
-			(at 195.58 127 180)
-			(uuid "dc4ed1d0-01d6-461d-a4ad-9c1f9ad4e023")
+		(pin "MEAS_IHS" output
+			(at 189.23 123.19 0)
+			(uuid "836d5bcd-1a0f-454d-b715-a09720e1a684")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "V_NFET_MEAS" output
-			(at 195.58 124.46 180)
-			(uuid "da969353-9f14-4cf0-abfd-67e813e17e0d")
+		(pin "MEAS_VBUS" output
+			(at 189.23 125.73 0)
+			(uuid "43b5e233-e8ae-40d2-9cda-fc2bdea9179d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+		(pin "MEAS_VFET" output
+			(at 189.23 128.27 0)
+			(uuid "22c2833e-cede-4dd0-a69a-2deaf89fab43")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MEAS_ILS" output
+			(at 189.23 130.81 0)
+			(uuid "02f27d47-e03b-4561-a2a7-7f6647df93aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
