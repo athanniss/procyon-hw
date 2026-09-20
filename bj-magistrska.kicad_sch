@@ -215,80 +215,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "athanniss-lib:DUMMY_HEADER"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "DUMMY_HEADER_0_1"
-				(rectangle
-					(start -2.54 2.54)
-					(end 2.54 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -616,31 +542,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "1. Added ILI9341 2.2 inch TFT\n2. Removed OLED screen\n3. Fixed I2C pullups\n4. Removed wetting current circuit\n5. Added 1k resistor to transistor gate\n6. Decided not to implement debounce to rotary encoders, will use state machine based lib\n7. Upped gain on current measurement by 3x (from ~32 to 100)\n8. Added a DNP pulldown on transistor gate just in case"
-		(exclude_from_sim no)
-		(at 27.178 177.292 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3a5f45a4-bf20-40a3-b78a-ff8d62d1d6ba")
-	)
-	(text "1. I2C pullup upora sta vezana na maso\n2. Encoder mode deluje samo če je povezan na TIMx_CH1 in TIMx_CH2\n3. Manjka 1k upor med bufferjem in gatom tranzistorja\n4. Napačen footprint na napetostni referenci\n5. Kam si vezal tisti wetting current enable, lol"
-		(exclude_from_sim no)
-		(at 70.612 164.338 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "88f7f38c-8b4e-4159-b42c-dc9b4da5d538")
-	)
 	(wire
 		(pts
-			(xy 160.02 60.96) (xy 160.02 62.23)
+			(xy 193.04 99.06) (xy 193.04 100.33)
 		)
 		(stroke
 			(width 0)
@@ -650,17 +554,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 121.92) (xy 154.94 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48656147-4463-4c46-a57a-b2973161d16f")
-	)
-	(wire
-		(pts
-			(xy 162.56 60.96) (xy 160.02 60.96)
+			(xy 195.58 99.06) (xy 193.04 99.06)
 		)
 		(stroke
 			(width 0)
@@ -670,7 +564,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 58.42) (xy 160.02 57.15)
+			(xy 193.04 96.52) (xy 193.04 95.25)
 		)
 		(stroke
 			(width 0)
@@ -700,16 +594,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 124.46) (xy 154.94 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad38e20f-2c28-4eec-9fa6-b304fc58f376")
-	)
-	(wire
-		(pts
 			(xy 130.81 132.08) (xy 154.94 132.08)
 		)
 		(stroke
@@ -720,7 +604,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 58.42) (xy 160.02 58.42)
+			(xy 195.58 96.52) (xy 193.04 96.52)
 		)
 		(stroke
 			(width 0)
@@ -728,19 +612,9 @@
 		)
 		(uuid "c73add30-d86b-4664-9595-bce694ab9277")
 	)
-	(wire
-		(pts
-			(xy 130.81 127) (xy 154.94 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f740b58d-6bf4-4ef3-8286-36c4a956e2ef")
-	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 160.02 57.15 0)
+		(at 193.04 95.25 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -752,7 +626,7 @@
 		(fields_autoplaced yes)
 		(uuid "163e386d-48f2-4b1b-b9f6-8cd2077f566b")
 		(property "Reference" "#PWR041"
-			(at 160.02 60.96 0)
+			(at 193.04 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -763,7 +637,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 160.02 52.07 0)
+			(at 193.04 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -773,7 +647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 57.15 0)
+			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -784,7 +658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 57.15 0)
+			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -795,7 +669,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 160.02 57.15 0)
+			(at 193.04 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -819,7 +693,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 167.64 60.96 0)
+		(at 200.66 99.06 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -830,7 +704,7 @@
 		(dnp no)
 		(uuid "5047c4a3-03b9-464c-8314-0bf6d7de2f06")
 		(property "Reference" "J1"
-			(at 171.196 58.42 0)
+			(at 204.216 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -840,7 +714,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 180.848 61.214 0)
+			(at 213.868 99.314 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -850,7 +724,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
-			(at 167.64 60.96 0)
+			(at 200.66 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -861,7 +735,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 60.96 0)
+			(at 200.66 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -872,7 +746,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 167.64 60.96 0)
+			(at 200.66 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -883,7 +757,7 @@
 			)
 		)
 		(property "Mfg. Part Number" "1985904"
-			(at 167.64 60.96 0)
+			(at 200.66 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1002,106 +876,8 @@
 		)
 	)
 	(symbol
-		(lib_id "athanniss-lib:DUMMY_HEADER")
-		(at 201.93 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5007aa1-38d0-47c2-809a-58469b019e33")
-		(property "Reference" "J2"
-			(at 205.74 71.7549 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "20 pos"
-			(at 205.74 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/386/xRxCzzzSxxN-RC_ST_11635-B.pdf"
-			(at 201.93 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dummy pin header for BOM generation"
-			(at 201.93 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey no." "S1131EC-20-ND"
-			(at 201.93 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg. Part Number" "PRPC020SACN-RC"
-			(at 201.93 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "bj-magistrska"
-				(path "/6822ed0d-de6e-44f8-850c-f571d41ba3a1"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDPWR")
-		(at 160.02 62.23 0)
+		(at 193.04 100.33 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1113,7 +889,7 @@
 		(fields_autoplaced yes)
 		(uuid "d46260ba-afbe-40aa-8f6a-04ec04fcf4a4")
 		(property "Reference" "#PWR071"
-			(at 160.02 67.31 0)
+			(at 193.04 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1124,7 +900,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 160.147 66.04 0)
+			(at 193.167 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1134,7 +910,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 63.5 0)
+			(at 193.04 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1145,7 +921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 63.5 0)
+			(at 193.04 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1156,7 +932,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 160.02 62.23 0)
+			(at 193.04 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1179,8 +955,8 @@
 		)
 	)
 	(sheet
-		(at 90.17 95.25)
-		(size 40.64 44.45)
+		(at 109.22 115.57)
+		(size 21.59 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1195,7 +971,7 @@
 		)
 		(uuid "03304114-aca3-49d8-9019-79a8f0173834")
 		(property "Sheetname" "Nucleo-144"
-			(at 90.17 94.5384 0)
+			(at 109.22 114.8584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1206,7 +982,7 @@
 			)
 		)
 		(property "Sheetfile" "nucleo-144.kicad_sch"
-			(at 90.17 140.2846 0)
+			(at 109.22 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1214,56 +990,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "SW2" input
-			(at 90.17 101.6 180)
-			(uuid "ebde7f29-5cc0-45d3-957a-2ccc47f47286")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SW1" input
-			(at 90.17 99.06 180)
-			(uuid "de41c0bf-1dd5-40ca-89e1-8843dd7ebfe4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SW_ENC" input
-			(at 90.17 114.3 180)
-			(uuid "e35fcdf6-9b7f-4df8-ab13-37a7f58d98cf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ENC_A" input
-			(at 90.17 109.22 180)
-			(uuid "7a6baffe-1705-4326-a2a9-7712f550ffc6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ENC_B" input
-			(at 90.17 111.76 180)
-			(uuid "9a85c4da-0447-407f-99c0-ab1f0da9b684")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "IO_PWM_CONTROL" output
@@ -1383,43 +1109,43 @@
 			)
 		)
 		(pin "MEAS_IHS" output
-			(at 189.23 123.19 0)
+			(at 154.94 121.92 180)
 			(uuid "836d5bcd-1a0f-454d-b715-a09720e1a684")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "MEAS_VBUS" output
-			(at 189.23 125.73 0)
+			(at 154.94 124.46 180)
 			(uuid "43b5e233-e8ae-40d2-9cda-fc2bdea9179d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "MEAS_VFET" output
-			(at 189.23 128.27 0)
+			(at 154.94 127 180)
 			(uuid "22c2833e-cede-4dd0-a69a-2deaf89fab43")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "MEAS_ILS" output
-			(at 189.23 130.81 0)
+			(at 154.94 119.38 180)
 			(uuid "02f27d47-e03b-4561-a2a7-7f6647df93aa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
