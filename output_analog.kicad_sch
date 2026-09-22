@@ -6,7 +6,9 @@
 	(paper "A3")
 	(title_block
 		(title "Procyon [Capstone]")
-		(rev "V1.1.x")
+		(date "2026-09-22")
+		(rev "V1.1.0")
+		(comment 1 "Not intended for production. Keeps custom I_LS chain for future reference.")
 	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC1G17"
@@ -3216,6 +3218,27 @@
 		)
 		(uuid "223d2914-ba16-4f08-9b56-ca12f5236f5d")
 	)
+	(text_box "RC snubber to dampen potential ringing:\n+---------+-------------------+\n| C21     | R7 values to try  |\n+---------+-------------------+\n| 470 pF  | 10R, 22R, 33R     |\n| 1 nF    | 10R, 22R, 33R     |\n| 2.2 nF  | 10R, 15R, 22R     |\n| 4.7 nF  | 4R7, 10R, 15R     |\n+---------+-------------------+\n\nSuggested starting point:\nC21 = 1 nF - C0G/100V\nR7  = 22R - Size 0805"
+		(exclude_from_sim no)
+		(at 161.29 144.78 0)
+		(size 40.64 29.2948)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Consolas")
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2edcd675-0078-4c55-8a7d-f3c9587e37ee")
+	)
 	(text_box "Vout_max = Rsense * Imax * Gain\n\n	- A2 gain = 50\n	- A3 gain = 100\n\nRsense = 0.015\nImax = 2\n\nA2 Vout_max = 1,5V\nA3 Vout_max = 3,0V\n"
 		(exclude_from_sim no)
 		(at 215.9 64.77 0)
@@ -3472,6 +3495,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e32e03fd-3456-43ab-b001-b5c09d404f98")
+	)
+	(junction
+		(at 140.97 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efbdb105-17af-453b-be39-680f0a234754")
 	)
 	(junction
 		(at 220.98 215.9)
@@ -3829,7 +3858,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 69.85) (xy 140.97 88.9)
+			(xy 140.97 69.85) (xy 140.97 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4049,6 +4078,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 76.2) (xy 140.97 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5775f06b-c007-454e-986d-35b816e677ce")
+	)
+	(wire
+		(pts
 			(xy 312.42 157.48) (xy 312.42 158.75)
 		)
 		(stroke
@@ -4056,6 +4095,16 @@
 			(type default)
 		)
 		(uuid "59251bc4-d241-445d-b864-6856abc6f396")
+	)
+	(wire
+		(pts
+			(xy 128.27 71.12) (xy 128.27 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59fac453-9a5f-4b09-b0c8-4606c9d9a903")
 	)
 	(wire
 		(pts
@@ -4616,6 +4665,16 @@
 			(type default)
 		)
 		(uuid "bb3ae715-5ef6-48e3-b673-e8748a698ca5")
+	)
+	(wire
+		(pts
+			(xy 128.27 76.2) (xy 140.97 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc4c3d51-92fb-4c84-8b2a-0874f4b5a10e")
 	)
 	(wire
 		(pts
@@ -5374,7 +5433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" ""
 			(at 154.178 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -10032,7 +10091,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" ""
 			(at 153.67 154.9399 0)
 			(hide yes)
 			(show_name no)
@@ -10799,6 +10858,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b489784e-987e-4148-aa5c-db7c88d1882a")
+		(property "Reference" "TP15"
+			(at 126.746 65.786 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 130.81 69.0879 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
+			(at 133.35 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74494434-873f-41bb-a93d-bae26bd10ea0")
+		)
+		(instances
+			(project "bj-magistrska"
+				(path "/6822ed0d-de6e-44f8-850c-f571d41ba3a1/db2bed50-6fec-42f4-bd2a-90f8a985e97f"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_Amplifier_Operational_AKL:TSV732IS")
 		(at 250.19 213.36 0)
 		(unit 2)
@@ -11509,7 +11647,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "100R"
 			(at 95.25 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
