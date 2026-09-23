@@ -7,8 +7,8 @@
 	(title_block
 		(title "Procyon [Capstone]")
 		(date "2026-09-22")
-		(rev "V1.1.0")
-		(comment 1 "Not intended for production. Keeps custom I_LS chain for future reference.")
+		(rev "V1.2.x")
+		(comment 1 "Used INA240 as LS I analog chain.")
 	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
